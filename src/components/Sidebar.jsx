@@ -9,7 +9,7 @@ const Sidebar = ({visiable, setVisiable}) => {
   return (
     <div className={`bg-slate-200 h-screen fixed ${visiable?"w-40":"w-20"}   p-5 flex flex-col justify-between `}>
      <div >
-       <img src={menu} cn alt="" className='w-5 cursor-pointer' onClick={()=>setVisiable(!visiable)} />
+       <img src={menu}  alt="" className='w-5 cursor-pointer' onClick={()=>setVisiable(!visiable)} />
       <div className='flex items-center my-10 gap-2 cursor-pointer bg-gray-300 rounded-4xl p-2 justify-center '>
         <img src={plus} alt=""  className='w-4'/>
        {visiable? <p className='text-gray-400 text-sm'>New Chart</p>:null}
